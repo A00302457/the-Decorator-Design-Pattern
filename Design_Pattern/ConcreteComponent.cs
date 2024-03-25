@@ -4,7 +4,7 @@ namespace Design_Pattern
     {     
         public string GetText()
         {
-            return "Hello, Pooja! How are you doing today?";
+            return "I hope you doing good today! ";
         }
      
     }

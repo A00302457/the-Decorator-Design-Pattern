@@ -2,16 +2,16 @@ namespace Design_Pattern
 {
     public abstract class Decorator<T> : IComponent<T>
     {
-        protected IComponent<T> _component;
+        protected IComponent<T> _icomponent;
 
-        public Decorator(IComponent<T> component)
+        public Decorator(IComponent<T> icomponent)
         {
-            _component = component;
+            _icomponent = icomponent;
         }
 
-        public T GetText()
+        public virtual T GetText()
         {
-            return _component.GetText();
+            return _icomponent.GetText();
         }
     }
 }
