@@ -20,5 +20,13 @@ Console.WriteLine(upperCaseDecorator.GetText());
 
 
 
+IComponent<string> lowerCaseDecorator = new LowerCaseDecorator(icomponent);
+Console.WriteLine(lowerCaseDecorator.GetText());
+
+IComponent<string> backgroundColorDecorator = new BackgroundColorDecorator(icomponent);
+Console.WriteLine(backgroundColorDecorator.GetText());
+
+
+
 
 
